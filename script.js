@@ -85,10 +85,9 @@ let gameResultFunction = () => {
         gameResultMsg.innerText = '🥳 🥳 🥳\nYou won the game homie\n🤜🤛';
     }
     else {
-        gameResultMsg.innerText = 'You were on the track never give up!!';
+        gameResultMsg.innerText = 'You lost it 😞 😞 😞\n But never give up!!';
     }
 }
-
 let gameResetFunction = () => {
     gameResult.classList.add('hidden');
     user_score = 0;
@@ -96,3 +95,4 @@ let gameResetFunction = () => {
     gameStart();
 }
 gameReset.addEventListener('click',gameResetFunction);
+document.querySelector('#end_game').addEventListener('click',gameResetFunction);

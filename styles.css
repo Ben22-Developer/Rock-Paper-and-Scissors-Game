@@ -165,10 +165,10 @@ footer {
         white-space: nowrap;
     }
     #introAbove {
-        animation:introAbove 20000ms steps(30) infinite 1000ms;
+        animation:introAbove 20000ms steps(30) infinite;
     }
     #introBelow {
-        animation:introBelow 20000ms steps(7) infinite 1000ms,border 700ms infinite 1000ms;
+        animation:introBelow 20000ms steps(7) infinite,border 700ms infinite;
         border-right:.1rem solid transparent;   
     }
 }
