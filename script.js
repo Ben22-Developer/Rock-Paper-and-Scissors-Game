@@ -29,7 +29,7 @@ let gameStart = () => {
     user_choice.classList.remove('none');
     start_game.style.backgroundColor = 'black';
     start_game.style.color = 'white';
-    start_game.innerText = 'You have to score 5 before the\nComputer to win the Game';
+    start_game.innerText = 'You have to score 5 points before the\nComputer in order to win the Game';
     toys.style.display = 'none';
     random();
     score();
