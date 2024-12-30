@@ -21,7 +21,7 @@ let gameReset = document.querySelector('#game-reset');
 
 let iterate,max_score,user_score,computer_score,random_question;
 iterate = 0;
-max_score = 3;
+max_score = 5;
 user_score = 0;
 computer_score = 0;
 
