@@ -41,9 +41,6 @@ h1,h2 {
     margin:0 0 2rem 0;
     padding:.7rem 3rem;
     text-align: center;
-    .arrow-down.hidden,.arrow-left.hidden {
-        display: none;
-    }
 }
 .hints {
     position: relative;
@@ -51,6 +48,7 @@ h1,h2 {
         font-weight: 200;
         background-color: rgb(219, 219, 219);
         color:black;
+        animation:hints-title 2000ms infinite;
     }
     ol {
         font-size: 1.5rem;
@@ -68,6 +66,9 @@ h1,h2 {
         transform: translateX(-50%);
         width:20rem;
     }
+}
+.pause-animation {
+    animation-play-state: paused;
 }
 .hidden-hints {
     opacity:0;
@@ -193,7 +194,13 @@ footer {
         border-right:.1rem solid black;
     }
 }
-@keyframes main {
+@keyframes hints-title {
+    to {
+        background-color: black;
+        color: aliceblue;
+    }
+}
+@keyframes mai {
     0%,75%{
         opacity: 0;
     }

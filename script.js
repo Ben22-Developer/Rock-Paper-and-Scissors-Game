@@ -62,17 +62,17 @@ let random = () => {
 }
 
 let hintsFunction = () => {
-    if (arrowLeft.classList.contains('hidden')) {
-        arrowLeft.classList.remove('hidden');
-        arrowDown.classList.add('hidden');
-        hints.classList.add('hidden-hints');
+    if (!hints.classList.contains('pause-animation')) {
+        hintsTitle.style.animationPlayState ='paused';
+        hintsTitle.innerText = 'Check Out The Hints';
     }
-    else {
-        arrowDown.classList.remove('hidden');
-        arrowLeft.classList.add('hidden');
+    if (hints.classList.contains('hidden-hints')) {
         hints.classList.remove('hidden-hints');
     }
-}
+    else {
+    hints.classList.add('hidden-hints');
+    }
+}   
 hintsTitle.addEventListener('click',hintsFunction);
 
 let gameResultFunction = () => {
